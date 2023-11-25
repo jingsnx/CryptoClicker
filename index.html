@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HSS 371 CryptoMining Game</title>
+</head>
+<body>
+    <script src = "index.js"></script>
+    <p>HSS371Coin: <span id = "coins">0</span></p>
+    <button onclick = "game.convert()">Convert to Money</button>
+    <p>Conversion Cost: $<span id = "coinsToMoney">0.1</span></p>
+    <p>Money: $<span id = "money">20</span></p>
+    <p>Total Waste Generated: <span id = "totalWaste">0</span>lbs</p>
+    <p>Total Electricity Used: <span id = "watts">0</span>W</p>
+    <button onclick = "buy(2)">Calculator [$<span id = "CalculatorCost">20</span>] -- <span id="Calculator">1</span></button>
+    <button onclick = "sell(2)">Sell a calculator</button>    
+    <button onclick = "buy(1)">Office Computers [$<span id = "OfficeComputerCost">100</span>] -- <span id="OfficeComputer">0</span></button>    
+    <button onclick = "sell(1)">Sell an office computer</button>    
+    <button onclick = "buy(0)">GTX3070 [$<span id = "GTX3070Cost">700</span>] -- <span id="GTX3070">0</span></button>    
+    <button onclick = "sell(0)">Sell a GTX3070</button>    
+
+</body>
+</html>
