@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>HSS 371 CryptoMining Game</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>CryptoClicker</title>
 </head>
 <body>
+    <div class="top">
+        <div class = "col">
+            <p>Money: $<span id = "money">20</span></p>
+            <p>Coins: <span id = "coins">0</span></p>
+            <p>Conversion Rate: $<span id = "coinsToMoney">0.1</span></p>
+            <p>Total Waste Generated: <span id = "totalWaste">0</span>lbs</p>
+            <p>Total Electricity Used: <span id = "watts">0</span>W</p>
+            <button onclick = "game.convert()">Convert to Money</button>
+        </div>
+    </div>
+    <div class = "coin">
+        <img class="coin-click" src = "img/coinpixel.png" onclick = "mine()"> 
+    </div>
+    <div class = "buttons">
+        <div class = "button-sub">
+            <span id="Calculator">0</span>
+            <button onclick = "buy(2)">Calculator [$<span id = "CalculatorCost">20</span>]</button>
+            <button onclick = "sell(2)">Sell</button>    
+        </div>
+        <div class = "button-sub">
+            <span id="OfficeComputer">0</span>
+            <button onclick = "buy(1)">Office Computer [$<span id = "OfficeComputerCost">100</span>]</button>    
+            <button onclick = "sell(1)">Sell</button>
+        </div>
+        <div class = "button-sub">
+            <span id="GTX3070">0</span>
+            <button onclick = "buy(0)">GTX3070 [$<span id = "GTX3070Cost">700</span>]</button>    
+            <button onclick = "sell(0)">Sell</button>
+        </div>
+       
+    </div>
     <script src = "index.js"></script>
-    <p>HSS371Coin: <span id = "coins">0</span></p>
-    <button onclick = "game.convert()">Convert to Money</button>
-    <p>Conversion Cost: $<span id = "coinsToMoney">0.1</span></p>
-    <p>Money: $<span id = "money">20</span></p>
-    <p>Total Waste Generated: <span id = "totalWaste">0</span>lbs</p>
-    <p>Total Electricity Used: <span id = "watts">0</span>W</p>
-    <button onclick = "buy(2)">Calculator [$<span id = "CalculatorCost">20</span>] -- <span id="Calculator">1</span></button>
-    <button onclick = "sell(2)">Sell a calculator</button>    
-    <button onclick = "buy(1)">Office Computers [$<span id = "OfficeComputerCost">100</span>] -- <span id="OfficeComputer">0</span></button>    
-    <button onclick = "sell(1)">Sell an office computer</button>    
-    <button onclick = "buy(0)">GTX3070 [$<span id = "GTX3070Cost">700</span>] -- <span id="GTX3070">0</span></button>    
-    <button onclick = "sell(0)">Sell a GTX3070</button>    
-
 </body>
 </html>

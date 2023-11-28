@@ -1,0 +1,53 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 5%;
+    margin: 0;
+    background-image: url("img/bg1rsz.png");
+}
+p{
+    margin: 5px;
+}
+.top{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    flex-direction: column;
+    text-align: center;
+}
+.coin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+}
+.coin-click{
+    height: 325px;
+}
+.coin-click:hover{
+    height: 335px;
+    transition: 0.3s;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid;
+    margin: 5px 0px;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.button-sub{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+}

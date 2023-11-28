@@ -68,6 +68,11 @@ function sell(index) {
   }
 }
 
+function mine(){
+  game.coins += 1;
+  display.updateMoney();
+}
+
 setInterval(function () {
   for (let i = 0; i < shop.amount.length; i++) {
     game.coins += shop.amount[i] * shop.coinsEarned[i];
