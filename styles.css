@@ -50,4 +50,5 @@ button:hover{
     display: flex;
     flex-direction: column;
     padding-inline: 20px;
+    text-align: center;
 }
