@@ -1,3 +1,5 @@
+var watts_per_coin = 55;
+
 var game = {
   coins: 0,
   coinsToMoney: 0.5,
@@ -69,15 +71,15 @@ function sell(index) {
 
 function mine(){
   game.coins += 1;
+  game.watts += watts_per_coin;
   display.updateMoney();
+
 }
 
 setInterval(function () {
   for (let i = 0; i < shop.amount.length; i++) {
     game.coins += shop.amount[i] * shop.coinsEarned[i];
-    game.watts +=
-      (Math.round(shop.amount[i] * (shop.electricity[i] / 1000) * 24) * 100) /
-      100;
+    game.watts += (shop.amount[i] * shop.coinsEarned[i])*watts_per_coin;
   }
   display.updateMoney();
 }, 1000);
