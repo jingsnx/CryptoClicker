@@ -46,11 +46,10 @@ var display = {
 function buy(index) {
   if (game.money >= shop.cost[index]) {
     game.money -= shop.cost[index];
-    shop.cost[index] = Math.round(shop.cost[index] * 1.15);
     shop.amount[index] = shop.amount[index] + 1;
 
     document.getElementById("money").innerHTML = game.money;
-    document.getElementById(shop.tag[index][0]).innerHTML = shop.cost[index];
+    //document.getElementById(shop.tag[index][0]).innerHTML = shop.cost[index];
     document.getElementById(shop.tag[index][1]).innerHTML = shop.amount[index];
     display.updateMoney();
   }
