@@ -8,7 +8,7 @@ var game = {
   totalWaste: 0,
   update: function () {
     const randomChange = Math.random() * 2 - 1;
-    this.coinsToMoney += randomChange / 100;
+    this.coinsToMoney += randomChange / 10;
     this.coinsToMoney = Math.round(this.coinsToMoney * 100) / 100;
     display.updateMoney();
   },
