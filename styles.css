@@ -1,11 +1,15 @@
 body {
     font-family: 'Varela Round', sans-serif;
+    color: #383838;
     padding-top: 5%;
     margin: 0;
     background-image: url("img/bg1rsz.png");
 }
 p{
     margin: 5px;
+}
+.coin-text {
+    font-size: 20px;
 }
 .top{
     display: flex;
@@ -39,11 +43,13 @@ button{
     padding: 10px;
     width: 200px;
     border: 2px solid;
+    border-color: #383838;
+    border-radius: 10px;
     margin: 5px 0px;
 }
 
 button:hover{
-    background-color: grey;
+    background-color: #c0c0c0;
 }
 
 .button-sub{

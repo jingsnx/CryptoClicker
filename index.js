@@ -1,4 +1,5 @@
-var watts_per_coin = 55;
+var watts_per_mine = 100000;
+var watts_per_transact = 700;
 
 var game = {
   coins: 0,
@@ -14,6 +15,7 @@ var game = {
   },
   convert: function () {
     this.money += this.coinsToMoney * this.coins;
+    game.watts += watts_per_transact;
     this.coins = 0;
     display.updateMoney();
   },
@@ -21,7 +23,7 @@ var game = {
 
 var shop = {
   tag: [
-    ["GTX3070Cost", "GTX3070"],
+    ["GraphicsCardsCost", "Graphics Cards"],
     ["OfficeComputerCost", "OfficeComputer"],
     ["CalculatorCost", "Calculator"],
   ],
@@ -71,7 +73,7 @@ function sell(index) {
 
 function mine(){
   game.coins += 1;
-  game.watts += watts_per_coin;
+  game.watts += watts_per_mine;
   display.updateMoney();
 
 }
@@ -79,7 +81,7 @@ function mine(){
 setInterval(function () {
   for (let i = 0; i < shop.amount.length; i++) {
     game.coins += shop.amount[i] * shop.coinsEarned[i];
-    game.watts += (shop.amount[i] * shop.coinsEarned[i])*watts_per_coin;
+    game.watts += (shop.amount[i] * shop.coinsEarned[i])*watts_per_mine;
   }
   display.updateMoney();
 }, 1000);
