@@ -23,14 +23,15 @@ var game = {
 
 var shop = {
   tag: [
-    ["GraphicsCardsCost", "Graphics Cards"],
-    ["OfficeComputerCost", "OfficeComputer"],
+    ["ASICCost", "ASIC"],
+    ["BasicComputerCost", "Basic Computer"],
     ["CalculatorCost", "Calculator"],
+    ["Upgrade1"], ["Upgrade2"], ["Upgrade3"],
   ],
   amount: [0, 0, 0],
-  cost: [700, 100, 20],
-  coinsEarned: [1000, 5, 1.5],
-  eWaste: [2, 20, 0.5],
+  cost: [1500, 700, 20, 20, 200, 500],
+  coinsEarned: [1000, 50, 1.5],
+  eWaste: [5, 20, 0.5, 0.5, 2, 2],
   electricity: [300, 100, 0],
 };
 

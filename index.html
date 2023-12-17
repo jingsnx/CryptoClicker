@@ -10,6 +10,9 @@
     <title>CryptoClicker</title>
 </head>
 <body>
+    <div class="title">
+        CryptoClicker
+    </div>
     <div class="top">
         <div class = "col">
             <p>Money: $<span id = "money">20</span></p>
@@ -29,23 +32,30 @@
                 Calculators: <span id="Calculator">0</span>
             </p>
             <button onclick = "buy(2)">Calculator [$<span id = "CalculatorCost">20</span>]</button>
+            <button onclick = "buy(4)">Upgrade [$<span id = "Upgrade1">50</span>]</button>
             <button onclick = "sell(2)">Sell</button>    
         </div>
         <div class = "button-sub">
             <p>
-                Office Computers: <span id="OfficeComputer">0</span>
+                Basic Computer: <span id="Basic Computer">0</span>
             </p>
-            <button onclick = "buy(1)">Office Computer [$<span id = "OfficeComputerCost">100</span>]</button>    
-            <button onclick = "sell(1)">Sell</button>
+            <button onclick = "buy(0)">Basic Computer [$<span id = "BasicComputerCost">1000</span>]</button>    
+            <button onclick = "buy(3)">Upgrade [$<span id = "Upgrade2">200</span>]</button>    
+            <button onclick = "sell(0)">Sell</button>
         </div>
         <div class = "button-sub">
             <p>
-                Graphics Cards: <span id="Graphics Cards">0</span>
+                ASIC: <span id="ASIC">0</span>
             </p>
-            <button onclick = "buy(0)">Graphics Card [$<span id = "GraphicsCardsCost">700</span>]</button>    
-            <button onclick = "sell(0)">Sell</button>
+            <button onclick = "buy(1)">ASIC [$<span id = "ASICCost">2000</span>]</button>  
+            <button onclick = "buy(5)">Upgrade [$<span id = "Upgrade3">500</span>]</button>  
+            <button onclick = "sell(1)">Sell</button>
         </div>
-       
+       <div>
+            <a href="moreinfo.html">
+                More Info Here!
+            </a>
+       </div>
     </div>
     <script src = "index.js"></script>
 </body>

@@ -1,9 +1,13 @@
 body {
     font-family: 'Varela Round', sans-serif;
     color: #383838;
-    padding-top: 5%;
+    padding-top: 2%;
     margin: 0;
     background-image: url("img/bg1rsz.png");
+}
+.title{
+    font-size: 50px;
+    text-align: center;
 }
 p{
     margin: 5px;
@@ -50,6 +54,7 @@ button{
 
 button:hover{
     background-color: #c0c0c0;
+    transition: 0.2s;
 }
 
 .button-sub{
