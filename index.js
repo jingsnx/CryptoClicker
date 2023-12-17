@@ -1,5 +1,4 @@
-var watts_per_mine = 100000;
-var watts_per_transact = 700;
+var watts_per_mine = 750;
 
 var game = {
   coins: 0,
@@ -15,7 +14,7 @@ var game = {
   },
   convert: function () {
     this.money += this.coinsToMoney * this.coins;
-    game.watts += watts_per_transact;
+    game.watts += watts_per_mine;
     this.coins = 0;
     display.updateMoney();
   },
